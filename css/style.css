@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 118px;
+  height: 28px;
+  padding: 3rem;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.hero .hero-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero .hero-img .hero-img-left, .hero .hero-img .hero-img-right {
+  width: 199px;
+  height: 153px;
+}
+
+.text-description {
+  padding: 3rem;
+}
+
+.text-description .title-description {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #28283D;
+}
+
+.text-description .features-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #87879D;
+  padding-top: 2rem;
+}
+
+.text-description .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+.text-description .btn-container .btn-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 193px;
+  height: 58px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #4D96A9;
+  border-radius: 29px;
+  margin-bottom: 1rem;
+}
+
+.text-description .btn-container .btn-download p {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.text-description .btn-container .btn-download p span {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8FE3F9;
+}
+
+.text-description .btn-container .btn-wts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 139px;
+  height: 58px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #855FB1;
+  border-radius: 29px;
+}
+
+.text-description .btn-container .btn-wts p {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.text-description .btn-container .btn-wts p span {
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8FE3F9;
+}
+
+.line-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.line-circle .line {
+  height: 84px;
+  border: 1px solid #87879D;
+  opacity: .25;
+}
+
+.line-circle .circle {
+  width: 56px;
+  height: 56px;
+  background: #FAFAFA;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.line-circle .circle span {
+  color: #87879D;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  font-style: normal;
+}
+
+.img-container {
+  width: 327px;
+  height: 310px;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+      grid-template-areas: "A B" "C D";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-container .img-1 {
+  background-image: url(/assets/desktop/image-woman-in-videocall.jpg);
+  width: 151px;
+  height: 143px;
+  background-size: contain;
+  border-radius: 8px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: A;
+}
+
+.img-container .img-2 {
+  background-image: url(/assets/desktop/image-women-videochatting.jpg);
+  width: 151px;
+  height: 143px;
+  background-size: contain;
+  border-radius: 8px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: B;
+}
+
+.img-container .img-3 {
+  background-image: url(/assets/desktop/image-men-in-meeting.jpg);
+  width: 151px;
+  height: 143px;
+  background-size: contain;
+  border-radius: 8px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: C;
+}
+
+.img-container .img-4 {
+  background-image: url(/assets/desktop/image-man-texting.jpg);
+  width: 151px;
+  height: 143px;
+  background-size: contain;
+  border-radius: 8px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: D;
+}
+
+.text-container-2 {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.text-container-2 h3 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4D96A9;
+}
+
+.text-container-2 h2 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #28283D;
+  padding-top: 2rem;
+}
+
+.text-container-2 p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #87879D;
+  padding-top: 2rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer .line-circle-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+}
+
+.footer .line-circle-f .line-f {
+  height: 84px;
+  border: 1px solid #87879D;
+  opacity: .25;
+}
+
+.footer .line-circle-f .circle-f {
+  width: 56px;
+  height: 56px;
+  background: #FAFAFA;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .line-circle-f .circle-f span {
+  color: #87879D;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  font-style: normal;
+}
+
+.footer .text-container-footer {
+  position: relative;
+  background: #4D96A9;
+  width: 375px;
+  height: 428px;
+}
+
+.footer .text-container-footer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .25;
+}
+/*# sourceMappingURL=style.css.map */

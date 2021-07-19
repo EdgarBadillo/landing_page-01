@@ -34,16 +34,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.hero .hero-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -52,9 +42,13 @@ body {
           justify-content: center;
 }
 
-.hero .hero-img .hero-img-left, .hero .hero-img .hero-img-right {
-  width: 176px;
+.hero .hero-img {
+  width: 372px;
   height: 153px;
+  background-image: url(/assets/tablet/image-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1rem;
 }
 
 .text-description {
@@ -423,6 +417,7 @@ body {
   z-index: 1;
   gap: 2rem;
   text-align: center;
+  margin: 1px;
 }
 
 .footer .text p {
@@ -456,5 +451,13 @@ body {
 .footer .text .btn p span {
   font-size: 16px;
   color: #D9B8FF;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-img {
+    width: 820px;
+    height: 303px;
+    background-image: url(/assets/tablet/image-hero.png);
+  }
 }
 /*# sourceMappingURL=style.css.map */

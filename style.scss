@@ -38,21 +38,38 @@ body{
 .hero{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     
     
         .hero-img{
 
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            
+            width: 372px;
+            height: 153px;
+            background-image: url(/assets/tablet/image-hero.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 1rem;
             
 
-                .hero-img-left, .hero-img-right{
-                    width: 176px;
-                    height: 153px;
-                }
+                // .hero-img-left{
+                //     width: 176px;
+                //     height: 153px;
+                //     background-image: url(/assets/desktop/image-hero-left.png);
+                //     background-size: contain;
+                //     background-repeat: no-repeat;
+                // }
+                // .hero-img-right{
+
+                //     width: 176px;
+                //     height: 153px;
+                //     background-image: url(/assets/desktop/image-hero-right.png);
+                //     background-size: contain;
+                //     background-repeat: no-repeat;
+                // }
+
         }
 }
 
@@ -384,6 +401,7 @@ body{
         z-index: 1;
         gap: 2rem;
         text-align: center;
+        margin: 1px;
 
         p{
 
@@ -420,5 +438,22 @@ body{
     
 
 
+
+}
+
+@media screen and (min-width : 700px ){
+
+    .hero-img{
+
+        width: 820px;
+        height: 303px;
+        
+        background-image: url(/assets/tablet/image-hero.png);
+        
+        
+
+    }
+
+    
 
 }

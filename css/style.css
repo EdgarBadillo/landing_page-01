@@ -34,7 +34,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .hero .hero-img {
@@ -45,10 +44,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero .hero-img .hero-img-left, .hero .hero-img .hero-img-right {
-  width: 199px;
+  width: 176px;
   height: 153px;
 }
 
@@ -275,7 +280,7 @@ body {
 
 .text-container-2 {
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem 1rem 10rem 1rem;
 }
 
 .text-container-2 h3 {
@@ -312,6 +317,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  position: relative;
 }
 
 .footer .line-circle-f {
@@ -326,6 +332,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 3rem;
+  position: absolute;
+  top: -160px;
+  left: 159px;
+  z-index: 2;
 }
 
 .footer .line-circle-f .line-f {
@@ -366,6 +376,9 @@ body {
   background: #4D96A9;
   width: 375px;
   height: 428px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer .text-container-footer img {
@@ -375,5 +388,73 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: .25;
+}
+
+.footer .text-container-footer h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+.footer .text-container-footer p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+.footer .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer .text p {
+  padding: 1rem;
+}
+
+.footer .text .btn {
+  width: 193px;
+  height: 58px;
+  background-color: #855FB1;
+  border-radius: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .text .btn p {
+  font-size: 16px;
+}
+
+.footer .text .btn p span {
+  font-size: 16px;
+  color: #D9B8FF;
 }
 /*# sourceMappingURL=style.css.map */

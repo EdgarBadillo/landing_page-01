@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -319,7 +321,7 @@ body {
 }
 
 .footer {
-  width: 375px;
+  width: 360px;
   height: 428px;
   background-image: url(/assets/mobile/image-footer.jpg);
   background-size: contain;
@@ -335,7 +337,7 @@ body {
 }
 
 .footer .filter {
-  width: 375px;
+  width: 360px;
   height: 428px;
   background-color: #4D96A9;
   position: absolute;

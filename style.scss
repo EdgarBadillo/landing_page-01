@@ -11,6 +11,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing:content-box;
     font-family: 'Red Hat Display', sans-serif;
     
 }
@@ -53,24 +54,6 @@ body{
             background-size: contain;
             background-repeat: no-repeat;
             
-            
-
-                // .hero-img-left{
-                //     width: 176px;
-                //     height: 153px;
-                //     background-image: url(/assets/desktop/image-hero-left.png);
-                //     background-size: contain;
-                //     background-repeat: no-repeat;
-                // }
-                // .hero-img-right{
-
-                //     width: 176px;
-                //     height: 153px;
-                //     background-image: url(/assets/desktop/image-hero-right.png);
-                //     background-size: contain;
-                //     background-repeat: no-repeat;
-                // }
-
         }
 }
 
@@ -307,7 +290,7 @@ body{
 // footler
 
 .footer{
-    width: 375px;
+    width: 360px;
     height: 428px;
     background-image: url(/assets/mobile/image-footer.jpg);
     background-size: contain;
@@ -317,7 +300,7 @@ body{
     position: relative;
 
     .filter{
-        width: 375px;
+        width: 360px;
         height: 428px;
         background-color: #4D96A9;
         position: absolute;

@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing:content-box
     
     
     
@@ -46,12 +47,12 @@ body{
         .hero-img{
 
             
-            width: 372px;
+            width: 300px;
             height: 153px;
             background-image: url(/assets/tablet/image-hero.png);
             background-size: contain;
             background-repeat: no-repeat;
-            margin: 1rem;
+            
             
 
                 // .hero-img-left{
@@ -262,15 +263,17 @@ body{
 }
 
 .text-container-2{
-
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     text-align: center;
-    // padding-top: 3rem;
-    // padding-bottom: 10rem;
-    padding: 3rem 1rem 10rem 1rem ;
+
+    padding: 3rem 0rem 10rem 0rem ;
     
     
     h3{
-
+        
         
         font-weight: 900;
         font-size: 16px;
@@ -281,6 +284,8 @@ body{
     }
 
     h2{
+        width: 327px;
+        height: 72px;
         font-weight: 900;
         font-size: 30px;
         line-height: 36px;
@@ -289,7 +294,8 @@ body{
     }
 
     p{
-
+        width: 327px;
+        height: 130px;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
@@ -301,11 +307,23 @@ body{
 // footler
 
 .footer{
-    
+    width: 375px;
+    height: 428px;
+    background-image: url(/assets/mobile/image-footer.jpg);
+    background-size: contain;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+
+    .filter{
+        width: 375px;
+        height: 428px;
+        background-color: #4D96A9;
+        position: absolute;
+        opacity: .6;
+
+    }
     
 
     .line-circle-f{
@@ -351,23 +369,11 @@ body{
     }
 
     .text-container-footer{
-        position: relative;
-        background: #4D96A9;
-
-        width: 375px;
+        position: relative;      
+        width: 360px;
         height: 428px;
         display: flex;
         
-        
-        
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-                opacity: .25;
-            }
-
             h2{
 
                 font-weight: 900;
@@ -381,7 +387,7 @@ body{
             }
 
             p{
-
+                
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 26px;
@@ -401,7 +407,7 @@ body{
         z-index: 1;
         gap: 2rem;
         text-align: center;
-        margin: 1px;
+        
 
         p{
 
@@ -443,10 +449,14 @@ body{
 
 @media screen and (min-width : 700px ){
 
+   .hero{
+       width: 700px;
+   }
+
     .hero-img{
 
-        width: 820px;
-        height: 303px;
+        width: 700px !important;
+        height: 303px !important;
         
         background-image: url(/assets/tablet/image-hero.png);
         
@@ -454,6 +464,93 @@ body{
 
     }
 
-    
+    .text-description{
 
+        width: 457px;
+        height: 262px;
+
+        .btn-container{
+
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
+            
+
+            .btn-download{
+                margin: 0;
+                
+            }
+        }
+
+    }
+
+    .img-container{
+
+        grid-template-areas: 
+        "A B C D";
+        width: 689px;
+        height: 156px;
+    }
+
+    .text-container-2{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 573px;
+        height: 240px;
+        
+
+            h2{
+
+                width: 445px;
+                height: 88px;
+                text-align: center;
+                font-size: 40px;
+                line-height: 44px;
+                margin: 0;
+
+            }
+    }
+
+    .footer{
+
+        width: 700px;
+        height: 390px;
+        background-image: url(/assets/tablet/image-footer.jpg);
+        position: relative;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .filter{
+
+            width: 700px;
+            height: 390px;
+            opacity: .6;
+            background-color: #4D96A9;
+            position: absolute;
+        }
+
+        .line-circle-f{
+            
+            left: 320px;
+
+
+        }
+
+        .text-container-footer, .text{
+
+            height: 380px;
+        }
+        
+        
+        
+
+            
+
+               
+        
+    }
 }

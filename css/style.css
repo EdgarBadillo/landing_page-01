@@ -18,6 +18,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .logo {
@@ -43,12 +45,11 @@ body {
 }
 
 .hero .hero-img {
-  width: 372px;
+  width: 300px;
   height: 153px;
   background-image: url(/assets/tablet/image-hero.png);
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 1rem;
 }
 
 .text-description {
@@ -273,8 +274,19 @@ body {
 }
 
 .text-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  padding: 3rem 1rem 10rem 1rem;
+  padding: 3rem 0rem 10rem 0rem;
 }
 
 .text-container-2 h3 {
@@ -287,6 +299,8 @@ body {
 }
 
 .text-container-2 h2 {
+  width: 327px;
+  height: 72px;
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
@@ -295,6 +309,8 @@ body {
 }
 
 .text-container-2 p {
+  width: 327px;
+  height: 130px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -303,6 +319,10 @@ body {
 }
 
 .footer {
+  width: 375px;
+  height: 428px;
+  background-image: url(/assets/mobile/image-footer.jpg);
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,6 +332,14 @@ body {
           flex-direction: column;
   text-align: center;
   position: relative;
+}
+
+.footer .filter {
+  width: 375px;
+  height: 428px;
+  background-color: #4D96A9;
+  position: absolute;
+  opacity: .6;
 }
 
 .footer .line-circle-f {
@@ -367,21 +395,11 @@ body {
 
 .footer .text-container-footer {
   position: relative;
-  background: #4D96A9;
-  width: 375px;
+  width: 360px;
   height: 428px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer .text-container-footer img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: .25;
 }
 
 .footer .text-container-footer h2 {
@@ -417,7 +435,6 @@ body {
   z-index: 1;
   gap: 2rem;
   text-align: center;
-  margin: 1px;
 }
 
 .footer .text p {
@@ -454,10 +471,88 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+  .hero {
+    width: 700px;
+  }
   .hero-img {
-    width: 820px;
-    height: 303px;
+    width: 700px !important;
+    height: 303px !important;
     background-image: url(/assets/tablet/image-hero.png);
+  }
+  .text-description {
+    width: 457px;
+    height: 262px;
+  }
+  .text-description .btn-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text-description .btn-container .btn-download {
+    margin: 0;
+  }
+  .img-container {
+        grid-template-areas: "A B C D";
+    width: 689px;
+    height: 156px;
+  }
+  .text-container-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 573px;
+    height: 240px;
+  }
+  .text-container-2 h2 {
+    width: 445px;
+    height: 88px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0;
+  }
+  .footer {
+    width: 700px;
+    height: 390px;
+    background-image: url(/assets/tablet/image-footer.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .filter {
+    width: 700px;
+    height: 390px;
+    opacity: .6;
+    background-color: #4D96A9;
+    position: absolute;
+  }
+  .footer .line-circle-f {
+    left: 320px;
+  }
+  .footer .text-container-footer, .footer .text {
+    height: 380px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -322,7 +322,7 @@ body {
 
 .footer {
   width: 360px;
-  height: 428px;
+  height: 400px;
   background-image: url(/assets/mobile/image-footer.jpg);
   background-size: contain;
   display: -webkit-box;
@@ -338,7 +338,7 @@ body {
 
 .footer .filter {
   width: 360px;
-  height: 428px;
+  height: 400px;
   background-color: #4D96A9;
   position: absolute;
   opacity: .6;
@@ -555,6 +555,102 @@ body {
   }
   .footer .text-container-footer, .footer .text {
     height: 380px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1440px;
+    height: 358px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero-img {
+    background-image: url(/assets/desktop/image-hero-left.png);
+    width: 394px !important;
+    height: 303px;
+    padding-bottom: 7rem;
+  }
+  .hero .text-description {
+    width: 517px;
+    height: 304px;
+  }
+  .hero .img-desk-right {
+    width: 394px;
+    height: 303px;
+    background-repeat: no-repeat;
+    background-image: url(/assets/desktop/image-hero-right.png);
+  }
+  .hero .text-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .text-description .title-description {
+    width: 426px;
+    height: 100px;
+  }
+  .text-container-2 p {
+    width: 540px;
+    height: 48px;
+  }
+  .footer {
+    width: 1440px;
+    height: 308px;
+    background-image: url(/assets/desktop/image-footer.jpg);
+  }
+  .footer .filter {
+    width: 1440px;
+    height: 308px;
+  }
+  .footer .line-circle-f {
+    left: 692px;
+  }
+  .footer .text-container-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1100px;
+    height: 308px;
+  }
+  .footer .text-container-footer .text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .text-container-footer .text h2 {
+    width: 350px;
+    height: 88;
+    text-align: left;
+  }
+  .footer .text-container-footer .text p {
+    width: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */

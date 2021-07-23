@@ -291,18 +291,20 @@ body{
 
 .footer{
     width: 360px;
-    height: 428px;
+    height: 400px;
     background-image: url(/assets/mobile/image-footer.jpg);
     background-size: contain;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+    // background-repeat: ;
 
     .filter{
         width: 360px;
-        height: 428px;
+        height: 400px;
         background-color: #4D96A9;
+        
         position: absolute;
         opacity: .6;
 
@@ -535,5 +537,103 @@ body{
 
                
         
+    }
+}
+
+@media screen and (min-width : 1200px ){
+
+    .hero{
+
+        width: 1440px;
+        height: 358px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+            .hero-img{
+                background-image: url(/assets/desktop/image-hero-left.png);
+                width: 394px !important;
+                height: 303px;
+                padding-bottom: 7rem;
+            }
+
+            .text-description{
+
+                width: 517px;
+                height: 304px;
+            }
+
+            .img-desk-right{
+
+                width: 394px;
+                height: 303px;
+                background-repeat: no-repeat;
+                background-image: url(/assets/desktop/image-hero-right.png);
+                
+            }
+
+            .text-description{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .title-description{
+
+                    width: 426px;
+                    height: 100px;
+                    
+                }
+            }
+    }
+
+    .text-container-2{
+        p{
+            width: 540px;
+            height: 48px;
+        }
+    }
+
+    .footer {
+
+        width: 1440px;
+        height: 308px;
+        background-image: url(/assets/desktop/image-footer.jpg);
+
+        .filter{
+            width: 1440px;
+            height: 308px;
+        }
+
+        .line-circle-f{
+
+            left: 692px;
+        }
+
+        .text-container-footer{
+            
+            flex-direction: column;
+            width: 1100px;
+            height: 308px;
+            
+            .text{
+
+                flex-direction: row;
+                justify-content: space-between;
+                
+                h2{
+                    width: 350px;
+                    height: 88;
+                    text-align: left;
+
+                }
+
+                p{
+                    width: 350px;
+
+                }
+            }
+        }
     }
 }
